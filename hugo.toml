@@ -1,0 +1,38 @@
+languageCode = 'en-us'
+title = 'My New Hugo Site :)'
+theme = "nightfall"
+
+[menu]
+[[menu.header]]
+name = "about"
+weight = 1
+url = "about"
+
+[params]
+user = "johnny"
+hostname = "github.io"
+readingTime = true                                                                                                                                                                                             # Show reading time on post page
+published = true
+footerHtml = '© 2024 João Ribeiro, Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme'
+
+[params.author]
+name = "Welcome"
+email = "joao.rosado.ribeiro@gmail.com"
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/anotherlusitano"
+icon = "fa fa-github"
+
+[[params.social]]
+key = 1
+name = "email"
+url = "mailto:joao.rosado.ribeiro@gmail.com"
+icon = "fa fa-envelope-o"
+
+[[params.social]]
+key = 2
+name = "discord"
+url = "https://discord.com/users/349908136922185729"
+icon = "bx bxl-discord-alt"
