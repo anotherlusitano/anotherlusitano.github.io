@@ -23,13 +23,13 @@ email = "joao.rosado.ribeiro@gmail.com"
 key = 0
 name = "github"
 url = "https://github.com/anotherlusitano"
-icon = "fa fa-github"
+icon = "bx bxl-github"
 
 [[params.social]]
 key = 1
 name = "email"
 url = "mailto:joao.rosado.ribeiro@gmail.com"
-icon = "fa fa-envelope-o"
+icon = "bx bx-envelope"
 
 [[params.social]]
 key = 2
