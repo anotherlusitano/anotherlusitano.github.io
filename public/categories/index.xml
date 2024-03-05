@@ -6,8 +6,8 @@
     <description>Recent content in Categories on My New Hugo Site :)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>joao.rosado.ribeiro@gmail.com (Welcome)</managingEditor>
-    <webMaster>joao.rosado.ribeiro@gmail.com (Welcome)</webMaster>
+    <managingEditor>joao.rosado.ribeiro@gmail.com (João Ribeiro)</managingEditor>
+    <webMaster>joao.rosado.ribeiro@gmail.com (João Ribeiro)</webMaster>
     <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

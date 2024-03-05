@@ -16,7 +16,7 @@ published = true
 footerHtml = '© 2024 João Ribeiro, Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme'
 
 [params.author]
-name = "Welcome"
+name = "João Ribeiro"
 email = "joao.rosado.ribeiro@gmail.com"
 
 [[params.social]]

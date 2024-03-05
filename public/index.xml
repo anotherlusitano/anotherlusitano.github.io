@@ -6,14 +6,14 @@
     <description>Recent content on My New Hugo Site :)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>joao.rosado.ribeiro@gmail.com (Welcome)</managingEditor>
-    <webMaster>joao.rosado.ribeiro@gmail.com (Welcome)</webMaster>
+    <managingEditor>joao.rosado.ribeiro@gmail.com (João Ribeiro)</managingEditor>
+    <webMaster>joao.rosado.ribeiro@gmail.com (João Ribeiro)</webMaster>
     <lastBuildDate>Mon, 26 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>//localhost:1313/about/</link>
-      <pubDate>Mon, 26 Feb 2024 00:00:00 +0000</pubDate><author>joao.rosado.ribeiro@gmail.com (Welcome)</author>
+      <pubDate>Mon, 26 Feb 2024 00:00:00 +0000</pubDate><author>joao.rosado.ribeiro@gmail.com (João Ribeiro)</author>
       <guid>//localhost:1313/about/</guid>
       <description>This is supposed to be a page about myself but idk what to write, so here are things that I remember I guess ¯\_(ツ)_/¯&#xA;Things that I like Linux ( I use Arch btw ) Build cli tools in Rust ( because the future will be written in Rust as you know ) Trying new editors ( but stuck in Vim bc idk how to exit ) Anime ( I enjoy slice of life animes :P ) Things that I created vizer-cli - a cli tool to watch movies/series/animes in portuguese; pomachat - a chat app built with Flutter (almost like Discord); piaget-cli - a cli tool to read my university emails.</description>
     </item>
