@@ -36,3 +36,9 @@ key = 2
 name = "discord"
 url = "https://discord.com/users/349908136922185729"
 icon = "bx bxl-discord-alt"
+
+[[params.social]]
+key = 3
+name = "youtube"
+url = "https://www.youtube.com/@anotherlusitano"
+icon = "bx bxl-youtube"
