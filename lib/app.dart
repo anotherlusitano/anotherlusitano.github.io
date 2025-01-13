@@ -10,7 +10,6 @@ class App extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
-      darkTheme: darkTheme,
       title: "João Ribeiro's Website",
       routerConfig: router,
     );
