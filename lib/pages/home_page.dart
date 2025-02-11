@@ -1,3 +1,4 @@
+import 'package:anotherlusitano_github_io/config/layout.dart';
 import 'package:anotherlusitano_github_io/views/mobile/home_view.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: LayoutBuilder(builder: (context, constraints) {
-        if (constraints.maxWidth > 915) {
+        if (constraints.maxWidth > Layout.mobileWidth) {
           return DesktopHomeView();
         } else {
           return MobileHomeView();
