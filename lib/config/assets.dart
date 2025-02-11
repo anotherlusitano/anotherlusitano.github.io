@@ -1,5 +1,6 @@
 class Assets {
   static const String brokenPochita = "assets/images/brokenpochita.png";
+  static const String drawerPochita = "assets/images/drawerpochita.png";
   static const String itsme = "assets/images/itsme.png";
   static const String github = "assets/svgs/github.svg";
   static const String linkedin = "assets/svgs/linkedin.svg";
