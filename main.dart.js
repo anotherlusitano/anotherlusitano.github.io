@@ -38649,7 +38649,7 @@ M(a){return new A.mk(new A.a7B(),null)},
 gyE(){return new A.I(1/0,56)}}
 A.a7B.prototype={
 $2(a,b){var s,r=null,q=t.E
-if(b.b>915){s=A.pE(A.a([new A.tj("HOME",B.mJ,"home",r),new A.tj("ABOUT",B.mK,"about",r),new A.tj("PROJECTS",B.mI,"projects",r)],q),B.aK,B.aE,B.aF,0)
+if(b.b>500){s=A.pE(A.a([new A.tj("HOME",B.mJ,"home",r),new A.tj("ABOUT",B.mK,"about",r),new A.tj("PROJECTS",B.mI,"projects",r)],q),B.aK,B.aE,B.aF,0)
 s=A.apc(A.a([A.ko(B.mM,B.k,r),A.d3(r,r,15),A.ko(B.mL,B.k,r),A.d3(r,r,15)],q),r,s)
 q=s}else q=A.apc(A.a([A.ko(B.mM,B.k,r),A.d3(r,r,15),A.ko(B.mL,B.k,r),A.d3(r,r,15)],q),new A.e_(new A.a7A(),r),r)
 return q},
@@ -38708,7 +38708,7 @@ A.aoC.prototype={
 $3(a,b,c){return new A.mk(new A.aox(c),null)},
 $S:274}
 A.aox.prototype={
-$2(a,b){var s=null,r=b.b<915?B.KY:s
+$2(a,b){var s=null,r=b.b<500?B.KY:s
 return A.Ap(new A.Kf(s),A.ff(this.a,s,s),r)},
 $S:276}
 A.aoy.prototype={
