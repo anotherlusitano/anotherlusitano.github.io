@@ -1,4 +1,3 @@
-import 'package:anotherlusitano_github_io/config/layout.dart';
 import 'package:flutter/material.dart';
 
 import '../config/routes.dart';
@@ -11,7 +10,7 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
       // Desktop view
-      return constraints.maxWidth > Layout.mobileWidth
+      return constraints.maxWidth > 500
           ? AppBar(
               title: Row(
                 children: [

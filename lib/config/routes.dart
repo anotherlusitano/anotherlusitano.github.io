@@ -1,6 +1,5 @@
 import 'package:anotherlusitano_github_io/components/drawer.dart';
 import 'package:anotherlusitano_github_io/components/navbar.dart';
-import 'package:anotherlusitano_github_io/config/layout.dart';
 import 'package:anotherlusitano_github_io/pages/about_page.dart';
 import 'package:anotherlusitano_github_io/pages/error_page.dart';
 import 'package:anotherlusitano_github_io/pages/home_page.dart';
@@ -42,7 +41,7 @@ final router = GoRouter(
         return LayoutBuilder(builder: (context, constraints) {
           return Scaffold(
             appBar: NavBar(),
-            drawer: constraints.maxWidth < Layout.mobileWidth ? const MyDrawer() : null,
+            drawer: constraints.maxWidth < 500 ? const MyDrawer() : null,
             body: Center(
               child: child,
             ),
