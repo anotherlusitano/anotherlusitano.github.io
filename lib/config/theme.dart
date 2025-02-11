@@ -45,6 +45,11 @@ final lightTheme = ThemeData(
       ],
       fontFamily: GoogleFonts.londrinaSolid().fontFamily,
     ),
+    headlineMedium: TextStyle(
+      color: Colors.white,
+      fontSize: 32,
+      fontFamily: GoogleFonts.londrinaSolid().fontFamily,
+    ),
     bodyMedium: TextStyle(
       color: Colors.black,
       fontFamily: GoogleFonts.firaMono().fontFamily,
