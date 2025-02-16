@@ -7,37 +7,35 @@ class ErrorPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          GridBackground(),
-          SingleChildScrollView(
-            child: Center(
-              child: Column(
-                children: [
-                  SizedBox(height: 40),
-                  SelectableText.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(text: "404 \n"),
-                        TextSpan(text: "Page not found \n"),
-                        TextSpan(text: "Sorry about it \n"),
-                      ],
-                    ),
-                    textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.headlineLarge,
+    return Stack(
+      children: [
+        GridBackground(),
+        SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: [
+                SizedBox(height: 40),
+                SelectableText.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(text: "404 \n"),
+                      TextSpan(text: "Page not found \n"),
+                      TextSpan(text: "Sorry about it \n"),
+                    ],
                   ),
-                  Image.asset(
-                    Assets.brokenPochita,
-                    width: 400,
-                    height: 400,
-                  ),
-                ],
-              ),
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.headlineLarge,
+                ),
+                Image.asset(
+                  Assets.brokenPochita,
+                  width: 400,
+                  height: 400,
+                ),
+              ],
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

@@ -8,45 +8,43 @@ class ProjectsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          GridBackground(),
+    return Stack(
+      children: [
+        GridBackground(),
 
-          // Content
-          SingleChildScrollView(
-            child: Center(
-              child: Column(
-                children: [
-                  Text(
-                    "Projects",
-                    style: Theme.of(context).textTheme.headlineLarge,
+        // Content
+        SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: [
+                Text(
+                  "Projects",
+                  style: Theme.of(context).textTheme.headlineLarge,
+                ),
+                SizedBox(height: 40),
+                Container(
+                  // I just want to show 4 ProjectBox by line
+                  constraints: BoxConstraints(maxWidth: 1100),
+                  child: Wrap(
+                    spacing: 25.0,
+                    runSpacing: 25.0,
+                    children: [
+                      for (var project in projects)
+                        ProjectBox(
+                          name: project.name,
+                          description: project.description,
+                          tags: project.tags,
+                          url: project.url,
+                        ),
+                    ],
                   ),
-                  SizedBox(height: 40),
-                  Container(
-                    // I just want to show 4 ProjectBox by line
-                    constraints: BoxConstraints(maxWidth: 1100),
-                    child: Wrap(
-                      spacing: 25.0,
-                      runSpacing: 25.0,
-                      children: [
-                        for (var project in projects)
-                          ProjectBox(
-                            name: project.name,
-                            description: project.description,
-                            tags: project.tags,
-                            url: project.url,
-                          ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 40),
-                ],
-              ),
+                ),
+                SizedBox(height: 40),
+              ],
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

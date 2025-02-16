@@ -42,9 +42,7 @@ final router = GoRouter(
           return Scaffold(
             appBar: NavBar(),
             drawer: constraints.maxWidth < 500 ? const MyDrawer() : null,
-            body: Center(
-              child: child,
-            ),
+            body: child,
           );
         });
       },
