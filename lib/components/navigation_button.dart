@@ -19,7 +19,7 @@ class NavigationButton extends StatelessWidget {
       icon: Icon(icon, color: Colors.white),
       label: Text(
         text,
-        style: Theme.of(context).textTheme.displayMedium,
+        style: Theme.of(context).textTheme.headlineSmall,
       ),
       onPressed: () => context.goNamed(route),
     );

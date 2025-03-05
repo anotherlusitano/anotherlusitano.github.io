@@ -57,8 +57,10 @@ class _PrimaryButtonState extends State<PrimaryButton> {
           ),
           label: Text(
             widget.text,
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: _isHovering ? Colors.white : Theme.of(context).textTheme.bodyMedium?.color,
+            style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                  color: _isHovering
+                      ? Colors.white
+                      : Theme.of(context).textTheme.displayMedium?.color,
                 ),
           ),
           onHover: (hovering) {

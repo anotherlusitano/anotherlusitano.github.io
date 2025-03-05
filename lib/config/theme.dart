@@ -7,7 +7,8 @@ final lightTheme = ThemeData(
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
-      shape: WidgetStateProperty.resolveWith((states) => ContinuousRectangleBorder()),
+      shape: WidgetStateProperty.resolveWith(
+          (states) => ContinuousRectangleBorder()),
       padding: WidgetStateProperty.resolveWith(
         (states) => EdgeInsetsDirectional.symmetric(
           vertical: 15,
@@ -50,6 +51,11 @@ final lightTheme = ThemeData(
       fontSize: 32,
       fontFamily: GoogleFonts.londrinaSolid().fontFamily,
     ),
+    headlineSmall: TextStyle(
+      color: Colors.white,
+      fontSize: 18,
+      fontFamily: GoogleFonts.londrinaSolid().fontFamily,
+    ),
     bodyMedium: TextStyle(
       color: Colors.black,
       fontFamily: GoogleFonts.firaMono().fontFamily,
@@ -57,10 +63,10 @@ final lightTheme = ThemeData(
       fontWeight: FontWeight.w900,
     ),
     displayMedium: TextStyle(
-      color: Colors.white,
-      fontFamily: GoogleFonts.firaMono().fontFamily,
-      fontSize: 16,
-      fontWeight: FontWeight.w100,
+      color: Colors.black,
+      fontFamily: GoogleFonts.faustina().fontFamily,
+      fontSize: 20,
+      fontWeight: FontWeight.w900,
     ),
   ),
 );
@@ -74,7 +80,8 @@ final darkTheme = ThemeData(
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
-      shape: WidgetStateProperty.resolveWith((states) => ContinuousRectangleBorder()),
+      shape: WidgetStateProperty.resolveWith(
+          (states) => ContinuousRectangleBorder()),
       padding: WidgetStateProperty.resolveWith(
         (states) => EdgeInsetsDirectional.symmetric(
           vertical: 15,

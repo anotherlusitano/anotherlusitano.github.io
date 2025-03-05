@@ -21,7 +21,8 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 40),
                 Container(
                   padding: EdgeInsets.all(2),
-                  decoration: BoxDecoration(color: Colors.black, shape: BoxShape.circle),
+                  decoration: BoxDecoration(
+                      color: Colors.black, shape: BoxShape.circle),
                   child: ClipOval(
                     child: SizedBox.fromSize(
                       size: Size.fromRadius(180),
@@ -40,12 +41,13 @@ class HomePage extends StatelessWidget {
                 SelectableText.rich(
                   TextSpan(
                     children: [
-                      TextSpan(text: "A computer science student driven by a \n"),
+                      TextSpan(
+                          text: "A computer science student driven by a \n"),
                       TextSpan(text: "passion for simplicity and quality."),
                     ],
                   ),
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.bodyMedium,
+                  style: Theme.of(context).textTheme.displayMedium,
                 ),
                 SizedBox(height: 40),
                 Wrap(

@@ -50,7 +50,7 @@ class ProjectBox extends StatelessWidget {
                     child: Text(
                       name,
                       overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.bodyMedium,
+                      style: Theme.of(context).textTheme.displayMedium,
                     ),
                   ),
                 ),
@@ -82,13 +82,11 @@ class ProjectBox extends StatelessWidget {
                 start: 8.0,
                 end: 8.0,
               ),
-              child: SingleChildScrollView(
-                child: Text(
-                  description,
-                  overflow: TextOverflow.visible,
-                  maxLines: null,
-                  style: Theme.of(context).textTheme.bodyMedium,
-                ),
+              child: Text(
+                description,
+                overflow: TextOverflow.visible,
+                maxLines: null,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
             ),
           ),
