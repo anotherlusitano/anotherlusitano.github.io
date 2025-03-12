@@ -118,7 +118,7 @@ A basic chat app built using Flutter and Firebase for the Software Engineering d
       Tag.firebase,
       Tag.nosql,
     ],
-    "https://github.com/anotherlusitano/pomachat",
+    "https://github.com/anotherlusitano/ESTG-ES1-Chat-Together",
   ),
   // ------------------------------------------------------
   Project(
