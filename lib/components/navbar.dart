@@ -14,17 +14,24 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
           ? AppBar(
               title: Row(
                 children: [
-                  NavigationButton(text: "HOME", icon: Icons.home, route: Routes.home.name),
-                  NavigationButton(text: "ABOUT", icon: Icons.info, route: Routes.about.name),
-                  NavigationButton(text: "PROJECTS", icon: Icons.computer, route: Routes.projects.name),
+                  NavigationButton(
+                    text: "HOME",
+                    icon: Icons.home,
+                    route: Routes.home.name,
+                  ),
+                  NavigationButton(
+                    text: "ABOUT",
+                    icon: Icons.info,
+                    route: Routes.about.name,
+                  ),
+                  NavigationButton(
+                    text: "PROJECTS",
+                    icon: Icons.computer,
+                    route: Routes.projects.name,
+                  ),
                 ],
               ),
               actions: [
-                Icon(
-                  Icons.language_rounded,
-                  color: Colors.white,
-                ),
-                SizedBox(width: 15),
                 Icon(
                   Icons.dark_mode_rounded,
                   color: Colors.white,
@@ -48,11 +55,6 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
                 },
               ),
               actions: [
-                Icon(
-                  Icons.language_rounded,
-                  color: Colors.white,
-                ),
-                SizedBox(width: 15),
                 Icon(
                   Icons.dark_mode_rounded,
                   color: Colors.white,
