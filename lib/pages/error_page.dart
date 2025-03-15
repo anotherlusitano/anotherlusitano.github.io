@@ -1,4 +1,4 @@
-import 'package:anotherlusitano_github_io/components/grid_background.dart';
+import 'package:anotherlusitano_github_io/components/background.dart';
 import 'package:anotherlusitano_github_io/config/assets.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +9,7 @@ class ErrorPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        GridBackground(),
+        Background(),
         SingleChildScrollView(
           child: Center(
             child: Column(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../components/grid_background.dart';
+import '../../components/background.dart';
 import '../../components/primary_button.dart';
 import '../../config/assets.dart';
 
@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        GridBackground(),
+        Background(),
 
         // Content
         SingleChildScrollView(

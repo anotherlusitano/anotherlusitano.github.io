@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../components/grid_background.dart';
+import '../components/background.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
@@ -8,7 +8,7 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        GridBackground(),
+        Background(),
 
         // Content
         SingleChildScrollView(

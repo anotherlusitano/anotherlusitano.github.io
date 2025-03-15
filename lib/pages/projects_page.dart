@@ -1,7 +1,7 @@
 import 'package:anotherlusitano_github_io/components/project_box.dart';
 import 'package:anotherlusitano_github_io/data/projects.dart';
 import 'package:flutter/material.dart';
-import '../components/grid_background.dart';
+import '../components/background.dart';
 
 class ProjectsPage extends StatelessWidget {
   const ProjectsPage({super.key});
@@ -10,7 +10,7 @@ class ProjectsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        GridBackground(),
+        Background(),
 
         // Content
         SingleChildScrollView(
