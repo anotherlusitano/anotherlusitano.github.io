@@ -1,4 +1,6 @@
+import 'package:anotherlusitano_github_io/providers/theme_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../config/routes.dart';
 import 'navigation_button.dart';
@@ -8,6 +10,8 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeNotifier = Provider.of<ThemeNotifier>(context, listen: false);
+
     return LayoutBuilder(builder: (context, constraints) {
       // Desktop view
       return constraints.maxWidth > 500
@@ -32,8 +36,9 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
                 ],
               ),
               actions: [
-                Icon(
-                  Icons.dark_mode_rounded,
+                IconButton(
+                  onPressed: () => themeNotifier.switchTheme(),
+                  icon: Icon(Icons.dark_mode_rounded),
                   color: Colors.white,
                 ),
                 SizedBox(width: 15),
@@ -55,8 +60,9 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
                 },
               ),
               actions: [
-                Icon(
-                  Icons.dark_mode_rounded,
+                IconButton(
+                  onPressed: () => themeNotifier.switchTheme(),
+                  icon: Icon(Icons.dark_mode_rounded),
                   color: Colors.white,
                 ),
                 SizedBox(width: 15),
