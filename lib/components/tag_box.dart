@@ -24,7 +24,7 @@ class TagBox extends StatelessWidget {
         child: Text(
           "#${tag.name}",
           overflow: TextOverflow.visible,
-          style: Theme.of(context).textTheme.bodyMedium,
+          style: Theme.of(context).textTheme.titleMedium,
         ),
       ),
     );

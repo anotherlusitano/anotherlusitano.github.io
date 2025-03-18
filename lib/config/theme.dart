@@ -5,6 +5,13 @@ final lightTheme = ThemeData(
   appBarTheme: AppBarTheme(
     backgroundColor: Color.fromARGB(255, 16, 15, 15),
   ),
+  scaffoldBackgroundColor: Colors.white,
+  canvasColor: Colors.black12,
+  primaryColor: Colors.black,
+  focusColor: Colors.white,
+  disabledColor: Colors.black,
+  hoverColor: Colors.black,
+  cardColor: Colors.white,
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
       shape: WidgetStateProperty.resolveWith(
@@ -62,7 +69,19 @@ final lightTheme = ThemeData(
       fontSize: 16,
       fontWeight: FontWeight.w900,
     ),
+    titleMedium: TextStyle(
+      color: Colors.black,
+      fontFamily: GoogleFonts.firaMono().fontFamily,
+      fontSize: 16,
+      fontWeight: FontWeight.w900,
+    ),
     displayMedium: TextStyle(
+      color: Colors.black,
+      fontFamily: GoogleFonts.faustina().fontFamily,
+      fontSize: 20,
+      fontWeight: FontWeight.w900,
+    ),
+    labelMedium: TextStyle(
       color: Colors.black,
       fontFamily: GoogleFonts.faustina().fontFamily,
       fontSize: 20,
@@ -76,8 +95,15 @@ final lightTheme = ThemeData(
 final darkTheme = ThemeData(
   appBarTheme: AppBarTheme(
     backgroundColor: Color.fromARGB(255, 16, 15, 15),
-    titleTextStyle: TextStyle(color: Colors.white),
   ),
+  scaffoldBackgroundColor: Color.fromRGBO(11, 13, 18, 1),
+  shadowColor: Colors.white12,
+  primaryColor: Colors.white,
+  focusColor: Colors.black,
+  disabledColor: Colors.black,
+  hoverColor: Colors.white,
+  canvasColor: Colors.white12,
+  cardColor: Color.fromRGBO(11, 13, 18, 1),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ButtonStyle(
       shape: WidgetStateProperty.resolveWith(
@@ -89,15 +115,6 @@ final darkTheme = ThemeData(
         ),
       ),
       backgroundColor: WidgetStateProperty.resolveWith((states) {
-        if (states.contains(WidgetState.hovered)) {
-          return Colors.white;
-        }
-        return Colors.black;
-      }),
-      shadowColor: WidgetStateProperty.resolveWith((states) {
-        if (states.contains(WidgetState.hovered)) {
-          return Colors.black;
-        }
         return Colors.white;
       }),
     ),
@@ -111,25 +128,45 @@ final darkTheme = ThemeData(
 
       // Stroke
       shadows: [
-        Shadow(offset: Offset(-1.5, -1.5), color: Colors.white),
-        Shadow(offset: Offset(1.5, -1.5), color: Colors.white),
-        Shadow(offset: Offset(1.5, 1.5), color: Colors.white),
-        Shadow(offset: Offset(-1.5, 1.5), color: Colors.white),
+        Shadow(offset: Offset(-1.5, -1.5), color: Colors.black87),
+        Shadow(offset: Offset(1.5, -1.5), color: Colors.black87),
+        Shadow(offset: Offset(1.5, 1.5), color: Colors.black87),
+        Shadow(offset: Offset(-1.5, 1.5), color: Colors.black87),
         Shadow(offset: Offset(3, 4), color: Colors.black),
       ],
+      fontFamily: GoogleFonts.londrinaSolid().fontFamily,
+    ),
+    headlineMedium: TextStyle(
+      color: Colors.white,
+      fontSize: 32,
+      fontFamily: GoogleFonts.londrinaSolid().fontFamily,
+    ),
+    headlineSmall: TextStyle(
+      color: Colors.white,
+      fontSize: 18,
       fontFamily: GoogleFonts.londrinaSolid().fontFamily,
     ),
     bodyMedium: TextStyle(
       color: Colors.white,
       fontFamily: GoogleFonts.firaMono().fontFamily,
       fontSize: 16,
-      fontWeight: FontWeight.w900,
     ),
-    displayMedium: TextStyle(
+    titleMedium: TextStyle(
       color: Colors.black,
       fontFamily: GoogleFonts.firaMono().fontFamily,
       fontSize: 16,
-      fontWeight: FontWeight.w100,
+      fontWeight: FontWeight.w900,
+    ),
+    displayMedium: TextStyle(
+      color: Colors.white,
+      fontFamily: GoogleFonts.faustina().fontFamily,
+      fontSize: 20,
+      fontWeight: FontWeight.w900,
+    ),
+    labelMedium: TextStyle(
+      color: Colors.white,
+      fontFamily: GoogleFonts.faustina().fontFamily,
+      fontSize: 20,
     ),
   ),
 );

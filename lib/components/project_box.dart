@@ -30,10 +30,13 @@ class ProjectBox extends StatelessWidget {
       height: 250,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: Colors.black),
-        color: Colors.white,
+        border: Border.all(color: Theme.of(context).primaryColor),
+        color: Theme.of(context).cardColor,
         boxShadow: [
-          BoxShadow(offset: Offset(4, 5), color: Colors.black),
+          BoxShadow(
+            offset: Offset(4, 5),
+            color: Theme.of(context).primaryColor,
+          ),
         ],
       ),
       child: Column(
@@ -50,7 +53,7 @@ class ProjectBox extends StatelessWidget {
                     child: Text(
                       name,
                       overflow: TextOverflow.ellipsis,
-                      style: Theme.of(context).textTheme.displayMedium,
+                      style: Theme.of(context).textTheme.labelMedium,
                     ),
                   ),
                 ),
@@ -65,13 +68,18 @@ class ProjectBox extends StatelessWidget {
                     Assets.github,
                     width: 30,
                     height: 30,
+                    colorFilter: ColorFilter.mode(
+                      Theme.of(context).primaryColor,
+                      BlendMode.srcIn,
+                    ),
+                    //colorFilter: Theme.of(context).primaryColor,
                   ),
                 ),
               ],
             ),
           ),
           Divider(
-            color: Colors.black,
+            color: Theme.of(context).primaryColor,
             height: 0,
           ),
           SizedBox(height: 2),

@@ -41,6 +41,7 @@ final router = GoRouter(
         return LayoutBuilder(builder: (context, constraints) {
           return Scaffold(
             appBar: NavBar(),
+            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             drawer: constraints.maxWidth < 500 ? const MyDrawer() : null,
             body: child,
           );

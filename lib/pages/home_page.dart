@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.displayMedium,
+                  style: Theme.of(context).textTheme.labelMedium,
                 ),
                 SizedBox(height: 40),
                 Wrap(

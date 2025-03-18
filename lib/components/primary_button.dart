@@ -30,11 +30,14 @@ class _PrimaryButtonState extends State<PrimaryButton> {
         duration: const Duration(milliseconds: 100),
         decoration: BoxDecoration(
           color: Colors.white,
-          border: Border.all(width: 1),
+          border: Border.all(
+            width: 1,
+            color: Colors.black,
+          ),
           boxShadow: _isHovering
               ? [
                   BoxShadow(
-                    color: Colors.black,
+                    color: Theme.of(context).hoverColor,
                     offset: const Offset(5, 5),
                   ),
                 ]
@@ -52,15 +55,17 @@ class _PrimaryButtonState extends State<PrimaryButton> {
             width: 50,
             height: 50,
             colorFilter: _isHovering
-                ? ColorFilter.mode(Colors.white, BlendMode.srcIn)
-                : ColorFilter.mode(Colors.black, BlendMode.srcIn),
+                ? ColorFilter.mode(
+                    Theme.of(context).focusColor, BlendMode.srcIn)
+                : ColorFilter.mode(
+                    Theme.of(context).disabledColor, BlendMode.srcIn),
           ),
           label: Text(
             widget.text,
             style: Theme.of(context).textTheme.displayMedium?.copyWith(
                   color: _isHovering
-                      ? Colors.white
-                      : Theme.of(context).textTheme.displayMedium?.color,
+                      ? Theme.of(context).focusColor
+                      : Theme.of(context).disabledColor,
                 ),
           ),
           onHover: (hovering) {

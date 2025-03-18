@@ -30,11 +30,17 @@ class AboutPage extends StatelessWidget {
                   margin: EdgeInsets.only(left: 10.0, right: 16.0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.black, width: 2),
+                    border: Border.all(
+                      color: Theme.of(context).primaryColor,
+                      width: 2,
+                    ),
                     boxShadow: [
-                      BoxShadow(offset: Offset(4, 5), color: Colors.black),
+                      BoxShadow(
+                        offset: Offset(4, 5),
+                        color: Theme.of(context).primaryColor,
+                      ),
                     ],
-                    color: Colors.white,
+                    color: Theme.of(context).cardColor,
                   ),
                   child: SelectableText.rich(
                     TextSpan(
