@@ -3,9 +3,9 @@ export const CONFIG = {
   // Site Settings
   // ---------------------------------------------------------------------------
   site: {
-    url: "https://alexmercer.dev",
+    url: "https://anotherlusitano.github.io",
     locale: "en_US",
-    twitterHandle: "@alexmercer_dev",
+    // twitterHandle: "@alexmercer_dev",
   },
 
   // ---------------------------------------------------------------------------
@@ -93,5 +93,4 @@ export const CONFIG = {
       ring: "oklch(0.556 0 0)",
     },
   },
-
 } as const;
