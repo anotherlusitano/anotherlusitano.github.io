@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/resume";
 import Markdown from "react-markdown";
 import ContactSection from "@/components/section/contact-section";
-import HackathonsSection from "@/components/section/hackathons-section";
+import CertificatesSection from "@/components/section/certificates-section";
 import PhotosSection from "@/components/section/photos-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
@@ -125,10 +125,10 @@ const sectionComponents: Record<string, React.ReactNode> = {
       </BlurFade>
     </section>
   ),
-  hackathons: (
-    <section id="hackathons">
+  certificates: (
+    <section id="certificates">
       <BlurFade delay={BLUR_FADE_DELAY * 13}>
-        <HackathonsSection />
+        <CertificatesSection />
       </BlurFade>
     </section>
   ),

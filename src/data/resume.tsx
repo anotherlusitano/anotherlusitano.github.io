@@ -3,7 +3,7 @@ import { House } from "lucide-react";
 import { FaDocker } from "react-icons/fa";
 import { FaLinux } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
-import { SiDart } from "react-icons/si";
+import { SiDart, SiGo } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaPhp } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
@@ -33,22 +33,20 @@ export const DATA = {
     },
     education: { order: 3, enabled: true, heading: "Education" },
     skills: { order: 4, enabled: true, heading: "Skills" },
-    projects: {
+    certificates: {
       order: 5,
+      enabled: true,
+      label: "Certificates",
+    },
+    projects: {
+      order: 6,
       enabled: true,
       label: "My Projects",
       heading: "Check out my latest work",
       text: "I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.",
     },
-    // hackathons: {
-    //   order: 7,
-    //   enabled: true,
-    //   label: "Hackathons",
-    //   heading: "I like building things",
-    //   text: "During my time in university, I attended {count}+ hackathons. People from around the country would come together and build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.",
-    // },
     // photos: {
-    //   order: 6,
+    //   order: 7,
     //   enabled: true,
     //   heading: "My Galery",
     // },
@@ -76,6 +74,7 @@ export const DATA = {
     { name: "React", icon: FaReact },
     { name: "Flutter", icon: FaFlutter },
     { name: "Rust", icon: FaRust },
+    { name: "Go", icon: SiGo },
     { name: "Java", icon: FaJava },
     { name: "PHP", icon: FaPhp },
     { name: "JavaScript", icon: IoLogoJavascript },
@@ -270,136 +269,26 @@ export const DATA = {
       video: "",
     },
   ],
-  // hackathons: [
-  //   {
-  //     title: "PNW Hacks 2022",
-  //     dates: "October 14th - 16th, 2022",
-  //     location: "Seattle, Washington",
-  //     description:
-  //       "Built a real-time collaborative code review tool using WebSockets and Monaco Editor. Won best developer tool.",
-  //     image: "https://avatar.vercel.sh/pnw-hacks?size=40",
-  //     win: "Best Developer Tool",
-  //     links: [],
-  //   },
-  //   {
-  //     title: "nwHacks 2022",
-  //     dates: "January 15th - 16th, 2022",
-  //     location: "Vancouver, BC",
-  //     description:
-  //       "Created an accessibility-first browser extension that rewrites complex legal documents into plain English using GPT-3.",
-  //     image: "https://avatar.vercel.sh/nwhacks-2022?size=40",
-  //     mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-  //     links: [],
-  //   },
-  //   {
-  //     title: "HackTheNorth 2021",
-  //     dates: "September 17th - 19th, 2021",
-  //     location: "Waterloo, Ontario (Remote)",
-  //     description:
-  //       "Built a distributed key-value store in Go with a Raft consensus implementation from scratch. Finalist in the systems track.",
-  //     image: "https://avatar.vercel.sh/hackthenorth-2021?size=40",
-  //     links: [
-  //       {
-  //         title: "Source",
-  //         icon: <Icons.github className="h-4 w-4" />,
-  //         href: "https://github.com/alexmercer-dev/raftdb",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "DubHacks 2021",
-  //     dates: "October 9th - 10th, 2021",
-  //     location: "Seattle, Washington",
-  //     description:
-  //       "Developed a carbon footprint tracker that integrates with Google Maps to suggest lower-emission commute alternatives.",
-  //     image: "https://avatar.vercel.sh/dubhacks-2021?size=40",
-  //     win: "Best Sustainability Hack",
-  //     links: [],
-  //   },
-  //   {
-  //     title: "StormHacks 2021",
-  //     dates: "April 24th - 25th, 2021",
-  //     location: "Burnaby, BC (Remote)",
-  //     description:
-  //       "Built a multiplayer browser game where players collaboratively debug a shared codebase before a timer runs out.",
-  //     image: "https://avatar.vercel.sh/stormhacks-2021?size=40",
-  //     links: [
-  //       {
-  //         title: "Devpost",
-  //         icon: <Icons.globe className="h-4 w-4" />,
-  //         href: "https://devpost.com/software/bugout",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "HackCamp 2020",
-  //     dates: "November 14th - 15th, 2020",
-  //     location: "Vancouver, BC (Remote)",
-  //     description:
-  //       "Created a CLI tool that automatically generates unit test scaffolding from TypeScript function signatures using static analysis.",
-  //     image: "https://avatar.vercel.sh/hackcamp-2020?size=40",
-  //     win: "1st Place Overall",
-  //     links: [
-  //       {
-  //         title: "Source",
-  //         icon: <Icons.github className="h-4 w-4" />,
-  //         href: "https://github.com/alexmercer-dev/testgen",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "cmd-f 2020",
-  //     dates: "March 7th - 8th, 2020",
-  //     location: "Vancouver, BC",
-  //     description:
-  //       "Built a mobile-first job board specifically for junior developers, aggregating listings from GitHub Jobs, HN Who's Hiring, and LinkedIn.",
-  //     image: "https://avatar.vercel.sh/cmd-f-2020?size=40",
-  //     links: [],
-  //   },
-  //   {
-  //     title: "nwHacks 2020",
-  //     dates: "January 11th - 12th, 2020",
-  //     location: "Vancouver, BC",
-  //     description:
-  //       "Developed a peer-to-peer study session platform with live video, shared whiteboards, and Pomodoro timers.",
-  //     image: "https://avatar.vercel.sh/nwhacks-2020?size=40",
-  //     mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-  //     links: [],
-  //   },
-  //   {
-  //     title: "HackTheNorth 2019",
-  //     dates: "September 13th - 15th, 2019",
-  //     location: "Waterloo, Ontario",
-  //     description:
-  //       "Built an API rate-limit visualizer that tracks usage across multiple providers and surfaces anomalies in real time.",
-  //     image: "https://avatar.vercel.sh/hackthenorth-2019?size=40",
-  //     mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-  //     links: [
-  //       {
-  //         title: "Source",
-  //         icon: <Icons.github className="h-4 w-4" />,
-  //         href: "https://github.com/alexmercer-dev/ratelens",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     title: "DeltaHacks V",
-  //     dates: "January 18th - 19th, 2019",
-  //     location: "Hamilton, Ontario",
-  //     description:
-  //       "Created a VS Code extension that suggests variable names based on type signatures and surrounding code context using a local ML model.",
-  //     image: "https://avatar.vercel.sh/deltahacks-v?size=40",
-  //     links: [],
-  //   },
-  //   {
-  //     title: "StormHacks 2019",
-  //     dates: "March 2nd - 3rd, 2019",
-  //     location: "Burnaby, BC",
-  //     description:
-  //       "Built a network latency heatmap tool that visualises CDN performance across regions using real user data injected via a lightweight JS snippet.",
-  //     image: "https://avatar.vercel.sh/stormhacks-2019?size=40",
-  //     win: "Best Infrastructure Hack",
-  //     links: [],
-  //   },
-  // ],
+  certificates: [
+    {
+      title: "Basics of Go",
+      dates: "Aug 17, 2026",
+      description:
+        "Learned core Go syntax, structs, testing, and goroutines, putting everything into practice by creating an API web server with Go templates.",
+      image:
+        "https://cdn.master.dev/assets/courses/2023-08-08-go-basics/thumb.webp",
+      links: [
+        {
+          title: "Certificate",
+          icon: <Icons.pdf className="h-4 w-4" />,
+          href: "https://static.frontendmasters.com/ud/c/e75d7a0819/EBGnaPNfBj/go-basics-masterdev.pdf",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/anotherlusitano/go-basics",
+        },
+      ],
+    },
+  ],
 } as const;
