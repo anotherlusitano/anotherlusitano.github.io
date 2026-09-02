@@ -73,7 +73,7 @@ export const DATA = {
     { name: "Laravel", icon: FaLaravel },
     { name: "React", icon: FaReact },
     { name: "Flutter", icon: FaFlutter },
-    { name: "Rust", icon: FaRust },
+    // { name: "Rust", icon: FaRust },
     { name: "Go", icon: SiGo },
     { name: "Java", icon: FaJava },
     { name: "PHP", icon: FaPhp },
