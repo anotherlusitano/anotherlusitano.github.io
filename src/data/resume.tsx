@@ -271,6 +271,26 @@ export const DATA = {
   ],
   certificates: [
     {
+      title: "Complete Go for Professional Developers",
+      dates: "Oct 9, 2026",
+      description:
+        "Reviewed Go fundamentals and learned to build a backend from scratch, including routing, middleware, PostgreSQL integration, token-based authentication, and unit tests, by creating a complete CRUD workout API.",
+      image:
+        "https://cdn.master.dev/assets/courses/2025-04-18-complete-go/thumb.webp",
+      links: [
+        {
+          title: "Certificate",
+          icon: <Icons.pdf className="h-4 w-4" />,
+          href: "https://cdn.master.dev/ud/c/e75d7a0819/pwzNwRtJBS/complete-go-masterdev.pdf",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/anotherlusitano/go-pro-course",
+        },
+      ],
+    },
+    {
       title: "Basics of Go",
       dates: "Aug 17, 2026",
       description:
