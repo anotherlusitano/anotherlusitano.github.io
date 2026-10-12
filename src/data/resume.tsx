@@ -271,6 +271,21 @@ export const DATA = {
   ],
   certificates: [
     {
+      title: "Complete Intro to Linux and the Command-Line",
+      dates: "Oct 12, 2026",
+      description:
+        "Reinforced my Linux command-line knowledge, including file management, pipes, permissions, processes, SSH, and curl, and learned new tools to automate everyday tasks with Bash scripts and cron jobs.",
+      image:
+        "https://cdn.master.dev/assets/courses/2020-08-17-linux-command-line/thumb.webp",
+      links: [
+        {
+          title: "Certificate",
+          icon: <Icons.pdf className="h-4 w-4" />,
+          href: "https://cdn.master.dev/ud/c/e75d7a0819/yCoqZbtnkv/linux-command-line-masterdev.pdf",
+        },
+      ],
+    },
+    {
       title: "Complete Go for Professional Developers",
       dates: "Oct 9, 2026",
       description:
