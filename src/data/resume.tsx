@@ -271,6 +271,26 @@ export const DATA = {
   ],
   certificates: [
     {
+      title: "Complete Intro to Containers",
+      dates: "Oct 17, 2026",
+      description:
+        "Learned how containers work under the hood (chroot, namespaces, cgroups), then how to build optimized images with Dockerfiles and orchestrate multiple containers with Docker Compose.",
+      image:
+        "https://cdn.master.dev/assets/courses/2024-08-06-complete-intro-containers-v2/thumb.webp",
+      links: [
+        {
+          title: "Certificate",
+          icon: <Icons.pdf className="h-4 w-4" />,
+          href: "https://cdn.master.dev/ud/c/e75d7a0819/fNQjbTScAe/complete-intro-containers-v2-masterdev.pdf",
+        },
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/anotherlusitano/docker-course",
+        },
+      ],
+    },
+    {
       title: "Complete Intro to Linux and the Command-Line",
       dates: "Oct 12, 2026",
       description:
